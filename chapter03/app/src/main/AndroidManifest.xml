@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chapter03">
         <activity
+            android:name=".DiaryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Chapter03.NoActionBar"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Chapter03.NoActionBar">

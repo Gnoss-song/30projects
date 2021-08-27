@@ -1,6 +1,7 @@
 package com.example.chapter03
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -62,6 +63,7 @@ class MainActivity : AppCompatActivity() {
 
             if (passwordPreferences.getString("password","000").equals(passwordFromUser)){
                 //패스워드 성공
+                startActivity(Intent(this,DiaryActivity::class.java))
             }
             else{
                 showErrorAlertDialog()
